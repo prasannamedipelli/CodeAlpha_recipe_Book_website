@@ -1,0 +1,165 @@
+/*General CSS*/
+
+*{ box-sizing: border-box;}
+body{
+    margin: 0;
+    background-color: #DBE5F0;
+}
+.header{
+    overflow: hidden;
+    background: white;
+    font-family: monospace;
+    font-size: 40px;
+    color: #FFB319;
+    text-align: center;
+
+    padding: 20px 10px;
+}
+.header a {
+    float: left;
+    color: #263F5B;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none; 
+    line-height: 20px;
+    border-radius: 4px;
+}
+.header a.logo{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.header a:hover{
+    background-color:#67788C;
+    color: #D3D8DE;
+    font-weight: bold;
+}
+.header a.active {
+    font-size: 20px;
+    background-color: #263F5B;
+    color:white;
+}
+.header right {
+    float: right;
+}
+@media screen and (max-width:500px){
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right{
+        float: none;
+    }
+}
+
+
+table{
+    font-size: 16px;
+}
+.post-container{
+    color: #F1DBC4;
+    font-family: Cambria;
+    font-size: 22px;
+    text-align: left;
+}
+
+.top-footer{
+    font-size: 40px;
+    position: relative;
+    height: 10%;
+    width: 100%;
+    background:#1E3248;
+    color: #F1DBC4;
+    text-align: center;
+    margin-top: 0px;
+}
+.low-footer{
+    color: #F1DBC4;
+    font-size: 40px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background-color: #162536;
+    text-align: center;    
+}
+
+.main-body-container{
+    text-align:center;
+}
+.main-body{
+    display: inline-block;
+    width: 90%;
+    background-color: #263F5B;
+    color:white;
+}
+
+
+
+
+/* HOME PAGE CSS */
+
+.main-image{
+    width: 100%;
+}
+.contents-title{
+    color: #F1DBC4;
+    font-size: 24px;
+    text-align:left;
+    margin: 0px 0px 0px 0px;
+}
+.page-contents{
+    background-color:#324E6E;
+    position:relative;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+div.sig-holder{
+    height: 5%;
+    position: relative;
+    width: 100%;
+    background-color:#263F5B;
+    text-align:center;
+}
+.sig-holder p {
+    color: #F1DBC4;
+    position: absolute;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 15px;
+    height: 5%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.post-spacing{
+    height:5%;
+    background-color: #1E3248;
+}
+
+
+
+/*NON-HOME PAGE CSS*/
+.return-home-link{
+    font-family: Cambria;
+    font-weight: 1000;
+    font-size: 20px;
+}
+.recipe-first-content li{
+    color:white;
+    text-align:left;
+}
+.non-main-table{
+    color: white;
+}
+.recipe-instructions{
+    text-align: left;
+}
+.recipe-heading{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(165, 85, 28);
+    text-align: left;
+}

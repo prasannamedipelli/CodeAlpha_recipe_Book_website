@@ -1,0 +1,107 @@
+<html> 
+    <head>
+        <title>Omelette</title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href = "recipe-book-style.css">
+        <div class="header">
+            <a href= "recipe-book-cover.html" class = "logo">Omelette</a>
+            <div class = "header-right">
+                <a class= "active" href = "recipe-book-cover.html">Home</a>
+                
+            </div>
+        </div>
+        <div class = "sig-holder">
+            <p id ="signature"></p>
+        </div>
+        <div class = "main-image">
+            <img style = "width: 100%" src="omelette-pic.jpg"> 
+        </div>
+        
+        <div class= "main-body-container">
+            <div class = "main-body">
+                <h2 class="recipe-heading" id="recipe-3">Recipe #3: Omelette</h2>
+                <ul class= "recipe-first-content">
+                    <li>Time: Pretty Freaking Long</li>
+                    <li>Serves: All the Homies</li>
+                </ul>
+        
+                <table class = "non-main-table">
+                    <thead>
+                        <tr>
+                            <th>Ingredients</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mushrooms</td>  
+                            <td>1/4 Cup</td>
+                            <td>$1.00</td>
+                        </tr>
+                        <tr>
+                            <td>Milk</td>
+                            <td>1/8 Cup</td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Eggs</td>
+                            <td>2 Eggs</td>
+                            <td>$6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Spinach</td>
+                            <td>1/2 Cup</td>
+                            <td>$15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Cheese</td>
+                            <td>1/4 cup</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tomatoes</td>
+                            <td>1/4 Cup</td>
+                            <td>$2.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ol class = "recipe-instructions">
+                    <li>Put a small pan on mediuam heat</li>
+                    <li>Add 1 teaspoon of water to a bowl</li>
+                    <li>Add 2 eggs to the bowl</li>
+                    <li>Add any additional spices, mix thoroughly</li>
+                    <li>Add milk, and mix</li>
+                    <li>Pour the mix into the small pan</li>
+                    <li>Add the remaining ingredients while the mixture is wet</li>
+                    <li>Wait until golden brown, from the bottom then flip</li>
+                    <li>Once both sides are golden brown, it is ready to plate and be served!</li>
+                </ol>
+            </div>
+        </div>
+        <div class = "top-footer">
+            Why did the pasta chef get arrested?
+            </div>
+        <div class = "low-footer">
+            Because of Baking and Entering
+        </div>
+        <script>
+            //Signature Script
+            var increment = 0;
+            var sig = ' - PRASANNA MEDIPELLI'
+            var speed = 100;
+            var complete  = false;
+            typeWriter();
+            function typeWriter(){
+                if(increment <sig.length){
+                    document.getElementById('signature').innerHTML += sig.charAt(increment);
+            
+                    increment++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+
+        </script>
+    </body>
+</html>

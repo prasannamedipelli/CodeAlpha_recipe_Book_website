@@ -1,0 +1,84 @@
+<html>
+    
+    <head>
+        <title>PRASANNA MEDIPELLI's recipe Book</title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href = "recipe-book-style.css">
+        <div class="header">
+            <a href= "recipe-book-cover.html" class = "logo">PRASANNA MEDIPELLI's Recipe Book</a>
+            <div class = "header-right">
+                <a class= "active" href = "recipe-book-cover.html">About Me</a>
+            </div>
+        </div>
+        <div class = "sig-holder">
+            <p id ="signature"></p>
+        </div>
+        <div class = "main-image">
+            <img style = "width: 100%" src="banana-bread.jpeg"> 
+        </div>
+        <div class= "main-body-container">
+            <div class = "main-body">
+                <div class = "page-contents">
+                    <h2 class = "contents-title">Contents:</h2>
+                    
+                        <div class ="post-container">
+                            
+                                <p>Recipe #1: Cookies</p>
+                                <a href="cookies.html"> 
+                                    
+                                        <img src = "square-cookie-pic.jpg">
+                                </a>
+                            
+                        </div>
+                        <div class="post-spacing"></div>
+                        <div class ="post-container">
+                           
+                                <p>Recipe #2: PB&J Sandwich</p>
+                                <a href="PBJ.html">
+                                    <img src = "square-pbj-pic.jpg">
+                                </a>
+                            
+                        </div>
+                        <div class="post-spacing"></div>
+                        <div class ="post-container">
+                            
+                                <p>Recipe #3: Omelette</p>
+                                <a href="omelette.html">
+                                    <img src = "square-omelette-pic.jpg">
+                                </a>
+                        </div>
+                        <div class="post-spacing"></div>
+                        
+                </div>
+        
+                
+
+                <script>
+                    //Signature Script
+                    var increment = 0;
+                    var sig = ' - PRASANNA MEDIPELLISS'
+                    var speed = 100;
+                    var complete  = false;
+                    typeWriter();
+                    function typeWriter(){
+                        if(increment <sig.length){
+                            document.getElementById('signature').innerHTML += sig.charAt(increment);
+                    
+                            increment++;
+                            setTimeout(typeWriter, speed);
+                        }
+                    }
+
+                </script>
+            </div>
+        </div>
+        <div class = "top-footer">
+            Why did the pasta chef get arrested?
+        </div>
+        <div class = "low-footer">
+            Because of Baking and Entering
+        </div>
+    </body>
+    
+</html>

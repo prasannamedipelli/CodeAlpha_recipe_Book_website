@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Cookies</title>
+    </head>
+    <body>
+        <link rel = "stylesheet" href = "recipe-book-style.css">
+        <div class="header">
+            <a href= "recipe-book-cover.html" class = "logo">Cookies</a>
+            <div class = "header-right">
+                <a class= "active" href = "recipe-book-cover.html">Home</a>  
+            </div>
+        </div>
+        <div class = "sig-holder">
+            <p id ="signature"></p>
+        </div>
+        <div class = "main-image">
+            <img style = "width: 100%" src="cookie-pic.jpg"> 
+        </div>
+        <div class= "main-body-container">
+            <div class = "main-body">
+                <h2 class="recipe-heading" id="recipe-1">Recipe #1: Cookies</h2>
+
+                <ul class = "recipe-first-content">
+                    <li>Time: Pretty Short</li>
+                    <li>Serves: All the Homies</li>
+                </ul>
+                <table class = "non-main-table">
+                    <thead>
+                        <tr> 
+                            <th> Ingredient</th>
+                            <th> Amount</th>
+                            <th> Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>White Bread</td>
+                            <td>2 Slices</td>
+                            <td>$40.00</td>
+                        </tr>
+                        <tr>
+                            <td>Peanut Butter</td>
+                            <td>1 Tbsp</td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Jelly Jam</td>
+                            <td>1 Tbsp</td>
+                            <td>$5.00</td>
+                        </tr>
+                
+                    </tbody>
+                </table>
+                <ol class= "recipe-instructions">
+                    <li>Get 2 slices of white bread</li>
+                    <li> Apply thick coat of peanut butter to one slice</li>
+                    <li> Apply coat of jelly to another slice</li>
+                    <li> Slap together </li>
+                    <li> EAT</li>
+                </ol>
+            </div>
+        </div>
+        <script>
+            //Signature Script
+            var increment = 0;
+            var sig = ' - PRASANNA MEDIPELLI'
+            var speed = 100;
+            var complete  = false;
+            typeWriter();
+            function typeWriter(){
+                if(increment <sig.length){
+                    document.getElementById('signature').innerHTML += sig.charAt(increment);
+            
+                    increment++;
+                    setTimeout(typeWriter, speed);
+                }
+            }
+
+        </script>
+        <div class = "top-footer">
+            Why did the pasta chef get arrested?
+            </div>
+            <div class = "low-footer">
+            Because of Baking and Entering
+            </div>
+    </body>
+</html>
